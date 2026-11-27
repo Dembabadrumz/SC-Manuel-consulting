@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | S'Manuel Consulting</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header class="contact-hero">
+    <div class="hero-overlay"></div>
+    <nav class="site-nav">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="S'Manuel Consulting logo">
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-copy">
+      <h1>Get In Touch</h1>
+      <p>Ready to transform your HR operations? Let's start a conversation<br>about how we can help your business thrive.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-details" aria-label="Contact details">
+      <article class="detail-card">
+        <span class="detail-icon">✉</span>
+        <h2>Email</h2>
+        <p>smanuelconsulting@hotmail.com</p>
+      </article>
+      <article class="detail-card">
+        <span class="detail-icon">⌕</span>
+        <h2>Phone</h2>
+        <p>UK: +44 742 744 7474<br>NG: +234 816 012 5151</p>
+      </article>
+      <article class="detail-card">
+        <span class="detail-icon">♡</span>
+        <h2>Location</h2>
+        <p>Sheffield, United Kingdom<br>Lagos, Nigeria</p>
+      </article>
+      <article class="detail-card">
+        <span class="detail-icon">◷</span>
+        <h2>Business Hours</h2>
+        <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 2:00 PM</p>
+      </article>
+    </section>
+
+    <section class="contact-content">
+      <div class="message-column">
+        <h2>Send Us A Message</h2>
+        <p class="intro">Fill out the form below and we'll get back to you within 24 hours.</p>
+        <form class="contact-form">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Michael Johnson" required>
+
+          <div class="form-row">
+            <div>
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="john@example.com" required>
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="+44 742 744 7474">
+            </div>
+          </div>
+
+          <label for="company">Company Name</label>
+          <input id="company" name="company" type="text" placeholder="Your Company Ltd.">
+
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service">
+            <option value="">Select...</option>
+            <option>Recruitment Services</option>
+            <option>HR Outsourcing</option>
+            <option>HR Audit</option>
+            <option>Training &amp; Growth</option>
+            <option>HR Compliance</option>
+          </select>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Tell us about your HR needs and how we can help..."></textarea>
+
+          <button type="submit">➤&nbsp; Send message</button>
+        </form>
+      </div>
+
+      <aside class="offices-column">
+        <h2>Our Offices</h2>
+        <p class="intro">We serve clients across the UK and Nigeria. Reach out to us through any of our offices.</p>
+
+        <div class="office">
+          <h3>United Kingdom Office</h3>
+          <p>⌖ &nbsp; Sheffield, United Kingdom</p>
+          <p>⌕ &nbsp; +44 742 744 7474</p>
+        </div>
+        <div class="office">
+          <h3>Nigeria Office</h3>
+          <p>⌖ &nbsp; Lagos, Nigeria</p>
+          <p>⌕ &nbsp; +234 816 012 5151</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="S'Manuel Consulting logo">
+        <p>People-First HR Solutions for<br>Modern Businesses</p>
+        <div class="social-links"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="X">𝕏</a></div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>✉ &nbsp; smanuelconsulting@hotmail.com</p><p>☎ &nbsp; UK: +44 742 744 7474</p><p>☎ &nbsp; NG: +234 816 012 5151</p><p>⌖ &nbsp; Sheffield, United Kingdom,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lagos, Nigeria</p>
+      </div>
+      <div>
+        <h3>Stay Connected</h3>
+        <p>Stay updated with our latest insights.</p>
+        <input type="email" placeholder="Email Address" aria-label="Email address">
+        <button type="button">Subscribe</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 S'Manuel Consulting. All rights reserved.</p>
+  </footer>
+</body>
+</html>
