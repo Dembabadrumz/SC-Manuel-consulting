@@ -1,0 +1,85 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'plus jakarta sans', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+.hero{
+    height: 500px;
+    width: 100%;
+    background-image:
+            linear-gradient(
+                rgba(15, 23, 42, 0.45),
+                rgba(15, 23, 42, 0.45)
+            ), 
+            url("https://s-manuel-consulting.vercel.app/_next/image?url=%2FaboutImg.jpg&w=640&q=75");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    padding: 30px;
+}
+
+.box{
+    height: 80px;
+    width: 900px;
+    background-color: white;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.box img {
+margin-left: 50px;
+}
+
+.nav{
+display: flex;
+gap: 30px;
+margin-right: 40px;
+
+}
+
+.hero-content{
+margin: auto;
+text-align: center;
+color: white;
+max-width: 700px;
+padding: 0 20px;
+font-weight: 900;
+}
+
+.hero-content h1{
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+}
