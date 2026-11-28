@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f7f3e9;
+    background-color: white;
     color: #252b3b;
 }
 
@@ -106,18 +106,18 @@ header{
 
 .about-company {
   background-color: #ffffff;
-  padding: 80px 40px; /* Top/bottom and side spacing */
+  padding: 80px 40px;
 }
 
 .about-company .container {
-  max-width: 1200px; /* Aligns cleanly with your floating navbar edges */
+  max-width: 1200px; 
   margin: 0 auto;
 }
 
 .about-company h2 {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #111827; /* Deep charcoal/black heading */
+  color: #111827; 
   margin-bottom: 20px;
 }
 
@@ -125,7 +125,7 @@ header{
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
-  color: #4b5563; /* Soft slate gray body text */
+  color: #4b5563;
   margin-bottom: 20px;
 }
 
@@ -135,7 +135,7 @@ header{
 
 .about-company strong {
   font-weight: 600;
-  color: #1f2937; /* Slightly darker emphasis for 2018, UK, and Lagos – Nigeria */
+  color: #1f2937; 
 }
 
 .stats-section {
@@ -346,7 +346,7 @@ header{
 
 @media (max-width: 600px) {
 
-    /* Navbar */
+   
     .navbar {
         flex-direction: column;
         gap: 20px;
@@ -360,7 +360,7 @@ header{
         gap: 20px;
     }
 
-    /* Stats */
+    
     .stats-section {
         grid-template-columns: repeat(2, 1fr);
         gap: 35px;
@@ -375,7 +375,7 @@ header{
         font-size: 14px;
     }
 
-    /* Mission & Vision */
+    
     .mission-vision {
         padding: 50px 5%;
     }
@@ -411,7 +411,7 @@ header{
         height: 250px;
     }
 
-    /* Core Values */
+    
     .core-values {
         padding: 50px 5%;
     }
@@ -433,7 +433,7 @@ header{
         padding: 25px;
     }
 
-    /* Leadership */
+    
     .leadership {
         padding: 50px 5%;
     }
@@ -447,4 +447,320 @@ header{
         height: 320px;
     }
 
+}
+
+
+.cta-banner {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+ 
+  background-image: url('https://s-manuel-consulting.vercel.app/_next/image?url=%2FaboutfooterImg.jpg&w=3840&q=75'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(34, 48, 66, 0.82);
+  z-index: 1;
+}
+
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+
+.cta-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+
+.cta-subtitle {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-weight: 400;
+  color: #e2e8f0;
+  margin: 0 auto 36px auto;
+  max-width: 580px;
+  line-height: 1.6;
+}
+
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+
+.btn-primary {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 1.5px solid #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 480px) {
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+.site-footer {
+  background-color: #1d2d44;
+  color: #e2e8f0;
+  padding: 64px 24px 32px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1.3fr 1.1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+
+.footer-logo img {
+  height: 36px;
+  width: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0 0 24px 0;
+  max-width: 240px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-icon {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #cbd5e1;
+}
+
+.footer-contact a {
+  color: #cbd5e1;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.footer-contact a:hover {
+  color: #ffffff;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #cbd5e1;
+}
+
+
+.newsletter-text {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: #131b26;
+  border: 1px solid #263549;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.88rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.newsletter-input::placeholder {
+  color: #64748b;
+}
+
+.newsletter-input:focus {
+  border-color: #475569;
+}
+
+.newsletter-btn {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #253b59;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: #2f4b70;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+}
+
+
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
