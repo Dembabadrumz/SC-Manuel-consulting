@@ -21,6 +21,7 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   text-align: center;
+  overflow-x: hidden;
 }
 
 button,
@@ -47,6 +48,11 @@ a {
 }
 
 .header-wrapper {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 28px 6%;
 }
 
